@@ -10,30 +10,6 @@ This directory contains complete examples for using the Mirelo AI Audio Generati
 
 ## Setup
 
-### Python
-
-The Python examples use `uv` for dependency management with inline script metadata. Install `uv`:
-
-```bash
-# macOS/Linux
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Windows
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-
-# Or via pip
-pip install uv
-```
-
-No additional setup needed - dependencies are declared inline in each script!
-
-### Node.js/TypeScript
-
-```bash
-cd nodejs
-npm install
-```
-
 ## Configuration
 
 Set your API key as an environment variable:
@@ -143,61 +119,8 @@ Array of video segments with start time, duration, and audio URLs for each segme
 
 ---
 
-## Video Requirements
-
-- **Formats:** MP4, WebM, MOV
-- **Max Duration:** 10 seconds for `/video-to-sfx`, 10 minutes for `/long-video-to-sfx`
-- **Max File Size:** Depends on your subscription plan
-
----
-
-## FFmpeg Installation
-
-Example 3 requires FFmpeg for video concatenation.
-
-**macOS:**
-```bash
-brew install ffmpeg
-```
-
-**Ubuntu/Debian:**
-```bash
-sudo apt-get install ffmpeg
-```
-
-**Windows:**
-Download from [ffmpeg.org](https://ffmpeg.org/download.html)
-
----
-
-## Troubleshooting
-
-### Authentication Errors (401)
-- Verify your API key is correct
-- Check that the environment variable is set properly
-
-### Video Upload Errors
-- Ensure video file exists at the specified path
-- Verify video format is supported (MP4, WebM, MOV)
-- Check file size limits for your plan
-
-### FFmpeg Errors
-- Ensure FFmpeg is installed and in your PATH
-- Verify audio/video files are accessible
-- Check that file formats are compatible
-
----
-
 ## Support
 
 For questions or issues:
 - Visit [mirelo.ai](https://mirelo.ai)
-- Email support@mirelo.ai
 - View API docs at [api.mirelo.ai/docs](https://api.mirelo.ai/docs)
-
----
-
-## License
-
-These examples are provided as-is for demonstration purposes.
-
