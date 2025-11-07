@@ -1,0 +1,29 @@
+{
+  "name": "mirelo-api-examples",
+  "version": "1.0.0",
+  "description": "Examples for using the Mirelo AI Audio Generation API",
+  "type": "module",
+  "scripts": {
+    "example1": "tsx 1_text_to_sfx.ts",
+    "example2": "tsx 2_short_video_sfx.ts",
+    "example3": "tsx 3_long_video_sfx.ts"
+  },
+  "keywords": [
+    "mirelo",
+    "ai",
+    "audio",
+    "sfx",
+    "sound-effects"
+  ],
+  "author": "Mirelo AI",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
+
