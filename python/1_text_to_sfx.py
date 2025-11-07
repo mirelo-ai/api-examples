@@ -1,4 +1,9 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run
+# /// script
+# dependencies = [
+#   "requests",
+# ]
+# ///
 """
 Example 1: Generate SFX from Text Description Only
 

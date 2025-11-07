@@ -1,4 +1,9 @@
-#!/usr/bin/env python3
+#!/usr/bin/env -S uv run
+# /// script
+# dependencies = [
+#   "requests",
+# ]
+# ///
 """
 Example 2: Generate SFX for Short Video (≤10 seconds)
 
@@ -18,8 +23,8 @@ API_KEY = os.getenv("MIRELO_API_KEY")
 BASE_URL = "https://api.mirelo.ai"
 OUTPUT_DIR = Path("output/example2")
 
-# Input video file (you need to provide your own)
-INPUT_VIDEO = "input_video_short.mp4"  # Replace with your video path
+# Input video file
+INPUT_VIDEO = "example_videos/video_1.mp4"  # Short video (<10 seconds)
 
 if not API_KEY:
     raise ValueError("Please set MIRELO_API_KEY environment variable")

@@ -5,17 +5,27 @@ This directory contains complete examples for using the Mirelo AI Audio Generati
 ## Prerequisites
 
 - API Key from [studio.mirelo.ai](https://studio.mirelo.ai)
-- Python 3.8+ or Node.js 18+
+- Python 3.8+ (with [uv](https://github.com/astral-sh/uv) installed) or Node.js 18+
 - FFmpeg installed (for video concatenation in example 3)
 
 ## Setup
 
 ### Python
 
+The Python examples use `uv` for dependency management with inline script metadata. Install `uv`:
+
 ```bash
-cd python
-pip install -r requirements.txt
+# macOS/Linux
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Windows
+powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+
+# Or via pip
+pip install uv
 ```
+
+No additional setup needed - dependencies are declared inline in each script!
 
 ### Node.js/TypeScript
 
@@ -42,7 +52,7 @@ Generate sound effects from text descriptions only.
 
 **Python:**
 ```bash
-python python/1_text_to_sfx.py
+uv run python/1_text_to_sfx.py
 ```
 
 **Node.js:**
@@ -63,7 +73,7 @@ Generate sound effects for a short video with full parameter control.
 
 **Python:**
 ```bash
-python python/2_short_video_sfx.py
+uv run python/2_short_video_sfx.py
 ```
 
 **Node.js:**
@@ -85,7 +95,7 @@ Generate sound effects for long videos using automatic scene detection.
 
 **Python:**
 ```bash
-python python/3_long_video_sfx.py
+uv run python/3_long_video_sfx.py
 ```
 
 **Node.js:**

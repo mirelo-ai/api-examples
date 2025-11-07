@@ -18,8 +18,8 @@ const API_KEY = process.env.MIRELO_API_KEY;
 const BASE_URL = "https://api.mirelo.ai";
 const OUTPUT_DIR = path.join(process.cwd(), "output", "example2");
 
-// Input video file (you need to provide your own)
-const INPUT_VIDEO = "input_video_short.mp4"; // Replace with your video path
+// Input video file
+const INPUT_VIDEO = "example_videos/video_1.mp4"; // Short video (<10 seconds)
 
 if (!API_KEY) {
   throw new Error("Please set MIRELO_API_KEY environment variable");
