@@ -18,8 +18,6 @@ Set your API key as an environment variable:
 export MIRELO_API_KEY="your_api_key_here"
 ```
 
-Or replace `process.env.MIRELO_API_KEY` / `os.getenv("MIRELO_API_KEY")` in the code with your actual key.
-
 ## Examples
 
 ### 1. Text-to-SFX (No Video Required)
